@@ -1,0 +1,118 @@
+.chart-wrapper {
+    height: 500px;
+}
+
+.row {
+    margin-top: 40px;
+}
+
+.navbar-custom {
+    background:#333;
+    color:#FFF;
+    border:none;
+    margin: 0;
+    border-radius: 0;
+}
+
+a {
+    color: #FFF;
+}
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #99979c;
+    text-align: center;
+    background-color: #2a2730;
+}
+
+footer ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-left:300px;
+}
+
+footer li {
+    margin-left: 14px;
+    float: left;
+    display: inline-block;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.page {
+    background: #222d32;
+}
+
+.toolbar{
+    background-color: #444;
+    padding: 10px 0 10px 0;
+}
+
+.toolbar .breadcrumb{
+    padding: 0;
+    background: none;
+    margin: auto 0 auto 20px;
+}
+
+.toolbar .form-wrapper{
+    margin-right: 20px;
+}
+
+.toolbar .form-group {
+    margin-right: 44px;
+}
+
+.toolbar label {
+    color: #FFF;
+}
+
+.main {
+    margin: 0 0 0 210px;
+    width: 100%;
+    min-height: 600px;
+    background-color: #eaedf1;
+}
+
+.sidebar{
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #222d32;
+}
+
+/* home */
+.home {
+    background-color: #444;
+    margin: 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+/* gis */
+#bmap {
+    height:600px;
+    width: 100%;
+    margin: 0 10px 0 10px;
+}
+
+.gis .toolbar {
+
+}
+
+/* chart */
+#JN_rail_1 {
+    height:600px;
+    width: 100%;
+    margin: 0 10px 0 10px;
+}
+
+/* major */
+.major .container {
+
+}
+
+

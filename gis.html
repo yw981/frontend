@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>地图展示页</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/sidebar-menu.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+    <body>
+        <div class="navbar navbar-custom">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/home">中国铁道科学研究院</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">专业 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">线路</a></li>
+                        <li><a href="#">路局</a></li>
+                        <li><a href="#">数据</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">快速链接 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">退出</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">当前:user <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+            <div class="page gis">
+        <div class="toolbar clearfix">
+            <ol class="breadcrumb pull-left">
+                <li><a href="#">钢轨</a></li>
+                <li><a href="#">济南铁路局</a></li>
+                <li class="active">京沪高铁</li>
+            </ol>
+            <div class="form-wrapper pull-right">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleInputName2">专业：</label>
+                        <select class="form-control">
+                            <option>钢轨</option>
+                            <option>扣件</option>
+                            <option>道岔</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName2">路局：</label>
+                        <select class="form-control">
+                            <option>北京铁路局</option>
+                            <option>济南铁路局</option>
+                            <option>上海铁路局</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName2">线路：</label>
+                        <select class="form-control">
+                            <option>京沪高铁</option>
+                            <option>武广高铁</option>
+                            <option>哈大高铁</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success">确认</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+            <section style="width: 200px">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-header">数据查询</li>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fa fa-table"></i>
+                            <span>钢轨专业</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="sidebar-submenu menu-open">
+                            <li><a href="#"><i class="fa fa-edit"></i> 钢轨伤损统计 </a></li>
+                            <li><a href="#"><i class="fa fa-edit"></i> 钢轨伤损统计 </a></li>
+                            <li><a href="#"><i class="fa fa-edit"></i> 钢轨伤损统计 </a></li>
+                            <li><a href="#"><i class="fa fa-edit"></i> 钢轨伤损统计 </a></li>
+                            <li><a href="#"><i class="fa fa-edit"></i> 钢轨伤损统计 </a></li>
+                            <li><a href="#"><i class="fa fa-edit"></i> 钢轨伤损统计 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-header">图表查询</li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pie-chart"></i>
+                            <span>可视化图表</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="sidebar-submenu menu-open">
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa fa-circle-o"></i> Dashboard v1</span>
+                                    <img src="image/pic.png" alt="img" width="160px" height="100px" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa fa-circle-o"></i> Dashboard v1</span>
+                                    <img src="image/pic.png" alt="img" width="160px" height="100px" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa fa-circle-o"></i> Dashboard v1</span>
+                                    <img src="image/pic.png" alt="img" width="160px" height="100px" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa fa-circle-o"></i> Dashboard v1</span>
+                                    <img src="image/pic.png" alt="img" width="160px" height="100px" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+        </div>
+        <div class="main">
+            <div id="bmap">
+
+            </div>
+        </div>
+
+    </div>
+        <footer class="foot">
+            <div class="container">
+                <ul class="clearfix">
+                    <li><a href="#">版权所有</a></li>
+                    <li><a href="#">技术支持</a></li>
+                    <li><a href="../about/">关于</a></li>
+                </ul>
+                <p>Designed and built with all the love in the world by . Maintained by the <a href="#">core team</a> with the help of .</p>
+            </div>
+        </footer>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sidebar-menu.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=IvLnncCb78ID39fGNM53UiaEwvOq59Df"></script>
+    <script type="text/javascript">
+        $.sidebarMenu($('.sidebar-menu'));
+
+        var map = new BMap.Map("bmap");
+        map.centerAndZoom(new BMap.Point(117.86155,37.26437), 7);
+        map.enableScrollWheelZoom();
+
+        var polyline = new BMap.Polyline([
+            new BMap.Point(116.37924,39.86495),
+            new BMap.Point(116.74963,39.21513),
+            new BMap.Point(117.12027,38.56487),
+            new BMap.Point(117.49091,37.91462),
+            new BMap.Point(117.86155,37.26437),
+            new BMap.Point(118.23218,36.61411),
+            new BMap.Point(118.60282,35.96386),
+            new BMap.Point(118.97346,35.3136),
+            new BMap.Point(119.34409,34.66335),
+            new BMap.Point(119.71473,34.0131)
+        ], {strokeColor:"blue", strokeWeight:2, strokeOpacity:0.5});   //创建折线
+        map.addOverlay(polyline);   //增加折线
+
+
+        var data_info = [[116.37924,39.86495,"京沪高铁,LINE 0"],
+            [116.74963,39.21513,"京沪高铁,LINE 98.784"],
+            [117.12027,38.56487,"京沪高铁,LINE 197.634"],
+            [117.49091,37.91462,"京沪高铁,LINE 296.484"],
+            [117.86155,37.26437,"京沪高铁,LINE 395.334"],
+            [118.23218,36.61411,"京沪高铁,LINE 494.184"],
+            [118.60282,35.96386,"京沪高铁,LINE 593.034"],
+            [118.97346,35.3136,"京沪高铁,LINE 691.884"],
+            [116.37924,39.86495,"京沪高铁,LINE 790.734"],
+            [119.34409,34.66335,"京沪高铁,LINE 889.584"]
+        ];
+        var opts = {
+            width : 250,     // 信息窗口宽度
+            height: 80,     // 信息窗口高度
+            title : "" , // 信息窗口标题
+            enableMessage:true//设置允许信息窗发送短息
+        };
+
+        for(var i=0;i<data_info.length;i++){
+            var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
+            var content = data_info[i][2];
+            map.addOverlay(marker);               // 将标注添加到地图中
+            addClickHandler(content,marker);
+        }
+        function addClickHandler(content,marker){
+            marker.addEventListener("click",function(e){
+                openInfo(content,e)}
+            );
+        }
+        function openInfo(content,e){
+            var p = e.target;
+            var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+            var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象
+            map.openInfoWindow(infoWindow,point); //开启信息窗口
+        }
+    </script>
+</html>
